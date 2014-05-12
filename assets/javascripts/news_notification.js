@@ -15,7 +15,7 @@
         classes['nn_badge_cnt'] = '';
 
         for (var i = 0; i < news.length; i ++) {
-            nn_list += '<li><a href="/news/' + news[i][0] + '">';
+            nn_list += '<li><a href="/redmine/news/' + news[i][0] + '">';
             nn_list += '<div class="nn_prtl">' + news[i][5] + ': ' + news[i][1] + '</div>';
             nn_list += '<div class="summary">' + news[i][2] + '</div>';
             nn_list += '<div class="nn_info">' + news[i][3] + ' | ' + news[i][4] + '</div>';
