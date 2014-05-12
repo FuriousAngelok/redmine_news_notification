@@ -22,13 +22,13 @@
             nn_list += '</a></li>';
         }
     } else {
-        nn_list += '<li><a class="nn_none">No unread news.</a></li>';
+        nn_list += '<li><a class="nn_none">Нет непрочитанных новостей</a></li>';
     }
     nn_list += '</ul>';
 
     var nn = document.querySelector('.nn');
     nn.innerHTML = '<span id="nn_badge"><span id="nn_badge_bgc" class="' + classes['nn_badge_bgc'] + '"></span><span id="nn_badge_cnt" class="' + classes['nn_badge_cnt'] + '">' + cnt + '</span></span>';
-    nn.insertAdjacentHTML('afterend', '<div id="nn_list_box" style="visibility: hidden;"><div id="nn_header"><a href="/redmine/news">View all news</a></div><div id="nn_list">' + nn_list + '</div></div>');
+    nn.insertAdjacentHTML('afterend', '<div id="nn_list_box" style="visibility: hidden;"><div id="nn_header"><a href="/redmine/news">Просмотреть все новости</a></div><div id="nn_list">' + nn_list + '</div></div>');
 
     var nn_list_box = document.getElementById('nn_list_box');
 
